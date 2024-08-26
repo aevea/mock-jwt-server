@@ -28,6 +28,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release Notary Action
-        uses: docker://aevea/release-notary:0.9.4
+        uses: docker://aevea/release-notary:0.9.7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
