@@ -6,7 +6,7 @@ endef
 
 build/docker:
 	$(call prepare_build_vars)
-	CGO_ENABLED=0 go build -a -tags "osusergo netgo" --ldflags "${DATE_FLAG} ${VERSION_FLAG} ${COMMIT_FLAG} -linkmode external -extldflags '-static'" -o build/jwt-server ./main.go
+	go build -a -tags "osusergo netgo" --ldflags "${DATE_FLAG} ${VERSION_FLAG} ${COMMIT_FLAG} -extldflags '-static'" -o build/jwt-server ./main.go
 
 build/local:
 	$(call prepare_build_vars)
