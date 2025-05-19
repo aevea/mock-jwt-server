@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Check out code into the Go module directory
         uses: actions/checkout@v4
-      - uses: asdf-vm/actions/install@v3
+      - uses: asdf-vm/actions/install@v4
       - uses: actions/cache@v4
         with:
           path: ~/go/pkg/mod
@@ -29,7 +29,7 @@ jobs:
     steps:
       - name: Check out code into the Go module directory
         uses: actions/checkout@v4
-      - uses: asdf-vm/actions/install@v3
+      - uses: asdf-vm/actions/install@v4
       - uses: actions/cache@v4
         with:
           path: ~/go/pkg/mod
