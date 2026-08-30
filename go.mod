@@ -6,7 +6,7 @@ require (
 	github.com/aevea/magefiles v0.0.0-20200424121010-0004d5a7a2fe
 	github.com/golang-jwt/jwt/v5 v5.2.1
 	github.com/lestrrat-go/jwx/v2 v2.1.1
-	github.com/magefile/mage v1.15.0
+	github.com/magefile/mage v1.17.2
 )
 
 require (
